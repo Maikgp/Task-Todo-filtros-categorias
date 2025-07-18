@@ -1,0 +1,101 @@
+.btn2 {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #1976d2 0%, #64b5f6 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.12);
+  transition: background 0.3s, transform 0.2s;
+  margin-right: 16px; /* Espacio entre botones */
+}
+
+.btn2:hover {
+  background: linear-gradient(90deg, #1565c0 0%, #42a5f5 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.btn3 {
+  padding: 10px 24px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #d32f2f 0%, #ff5252 100%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(211, 47, 47, 0.12);
+  transition: background 0.3s, transform 0.2s;
+  margin-right: 16px; /* Espacio entre botones */
+}
+
+.btn3:hover {
+  background: linear-gradient(90deg, #b71c1c 0%, #ff1744 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Select de categoría moderno */
+select[name="seleccion-categoria"] {
+  padding: 10px 18px;
+  border: 2px solid #1976d2;
+  border-radius: 8px;
+  background: #f5faff;
+  color: #1976d2;
+  font-weight: 500;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.08);
+  margin-right: 16px; /* Espacio entre select y botones */
+}
+
+select[name="seleccion-categoria"]:focus {
+  border-color: #64b5f6;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+}
+
+/* Select de filtro moderno */
+.filtro-categoria select {
+  background: #e3f2fd;
+  color: #1976d2;
+  font-weight: 600;
+  border: 2px solid #64b5f6;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 1rem;
+  outline: none;
+  box-shadow: 0 1px 4px rgba(100, 181, 246, 0.08);
+  transition: border-color 0.3s, box-shadow 0.2s;
+  margin-right: 16px; /* Espacio entre filtro y otros elementos */
+}
+
+.filtro-categoria select:focus {
+  border-color: #1976d2;
+  box-shadow: 0 2px 8px rgba(100, 181, 246, 0.15);
+}
+
+/* Contenedor del filtro */
+.filtro-categoria {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;
+  padding: 10px;
+  background: rgb(206, 216, 224);
+  box-shadow: 0 1px 4px rgba(25, 118, 210, 0.05);
+}
+
+/* Espacio entre el input de nueva tarea y el select de categoría */
+.nueva-tarea-select-categoria {
+  margin-left: 20px; /* Separación horizontal moderna */
+  margin-bottom: 0;  /* Sin separación vertical extra */
+  vertical-align: middle;
+}
+
+/* Si usas un contenedor para ambos, puedes aplicar flex para alinearlos */
+.nueva-tarea-contenedor {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Espacio moderno entre input y select */
+}
