@@ -141,7 +141,7 @@ function App() {
         }}
       >
         <StatusTareas
-          tareas={tareasFiltradas}
+          tareas={tareasFiltradas.filter(tarea => tarea.estado === 'Por hacer')}
           status="Por hacer"
           color="rgb(22 65 26 / 93%)"
           handleDrop={handleDrop}
@@ -149,12 +149,9 @@ function App() {
           handleDragStart={handleDragStart}
           seleccionarTarea={setTareaSeleccionada}
           tareaSeleccionada={tareaSeleccionada}
-
-
-
         />
         <StatusTareas
-          tareas={tareasFiltradas}
+          tareas={tareasFiltradas.filter(tarea => tarea.estado === 'En progreso')}
           status="En progreso"
           color="rgb(93 33 45)"
           handleDrop={handleDrop}
@@ -164,7 +161,7 @@ function App() {
           tareaSeleccionada={tareaSeleccionada}
         />
         <StatusTareas
-          tareas={tareasFiltradas}
+          tareas={tareasFiltradas.filter(tarea => tarea.estado === 'Terminada')}
           status="Terminada"
           color="rgb(79 52 202)"
           handleDrop={handleDrop}
